@@ -1,6 +1,6 @@
 [
-  "camera",
-  "graphics",
+  "Camera",
+  "Graphics",
   "animations",
   "audio",
   "beyond-splashkit",
