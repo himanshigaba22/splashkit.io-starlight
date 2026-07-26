@@ -19,4 +19,8 @@ WriteLine("Asking Gemma3 1B Instruct...");
 Conversation gemmaChat = new Conversation(LanguageModel.Gemma31BInstruct);
 gemmaChat.AddMessage(prompt);
 string gemmaReply = gemmaChat.GetReply();
-WriteLine("Gemma3 reply: " +
+WriteLine("Gemma3 reply: " + gemmaReply);
+
+// Release the resources used by both conversations
+qwenChat.Free();
+gemmaChat.Free();
