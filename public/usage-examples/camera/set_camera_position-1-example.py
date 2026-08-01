@@ -16,6 +16,6 @@ while not quit_requested():
     # A stationary object in the world - it does not move itself
     fill_rectangle(color_red(), 200, 100, 50, 50)
 
-    refresh_screen(60)
+    refresh_screen_with_target_fps(60)
 
 close_all_windows()

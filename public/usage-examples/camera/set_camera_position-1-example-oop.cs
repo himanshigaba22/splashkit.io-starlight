@@ -14,14 +14,14 @@ namespace SetCameraPositionExample
             {
                 SplashKit.ProcessEvents();
 
-                SplashKit.ClearScreen(SplashKit.ColorWhite());
+                SplashKit.ClearScreen(Color.White);
 
                 // Move the camera position each frame
                 SplashKit.SetCameraPosition(SplashKit.PointAt(cameraX, 0));
                 cameraX += 1;
 
                 // A stationary object in the world - it does not move itself
-                SplashKit.FillRectangle(SplashKit.ColorRed(), 200, 100, 50, 50);
+                SplashKit.FillRectangle(Color.Red, 200, 100, 50, 50);
 
                 SplashKit.RefreshScreen(60);
             }
