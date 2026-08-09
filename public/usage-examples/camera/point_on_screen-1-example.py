@@ -20,14 +20,14 @@ while not quit_requested():
     camera_x += 5
 
     # Draw a circle at the fixed world point - it does not move itself
-    fill_circle(color_red(), world_point, 20)
+    fill_circle_at_point(color_red(), world_point, 20)
 
     # Convert the world point to screen coordinates, then check visibility
     # The text is drawn to_screen so it stays fixed and does not scroll with the camera
     if point_on_screen(to_screen_point(world_point)):
-        draw_text("Point On Screen: TRUE", color_black(), status_font, 20, 10, 10, option_to_screen())
+        draw_text_with_options("Point On Screen: TRUE", color_black(), status_font, 20, 10, 10, option_to_screen())
     else:
-        draw_text("Point On Screen: FALSE", color_black(), status_font, 20, 10, 10, option_to_screen())
+        draw_text_with_options("Point On Screen: FALSE", color_black(), status_font, 20, 10, 10, option_to_screen())
 
     refresh_screen_with_target_fps(60)
 
