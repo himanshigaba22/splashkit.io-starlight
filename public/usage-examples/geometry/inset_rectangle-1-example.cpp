@@ -16,7 +16,7 @@ int main()
         clear_screen(COLOR_WHITE);
 
         // Increase or decrease the inset amount with the arrow keys
-        if (key_down(UP_KEY))
+        if (key_down(UP_KEY) && inset_amount < 95)
         {
             inset_amount += 1;
         }

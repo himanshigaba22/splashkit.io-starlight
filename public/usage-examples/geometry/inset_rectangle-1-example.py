@@ -13,7 +13,7 @@ while not quit_requested():
     clear_screen(color_white())
 
     # Increase or decrease the inset amount with the arrow keys
-    if key_down(KeyCode.up_key):
+    if key_down(KeyCode.up_key) and inset_amount < 95:
         inset_amount += 1
     if key_down(KeyCode.down_key) and inset_amount > 0:
         inset_amount -= 1

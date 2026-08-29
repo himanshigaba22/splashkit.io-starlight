@@ -20,7 +20,7 @@ namespace InsetRectangleExample
                 SplashKit.ClearScreen(Color.White);
 
                 // Increase or decrease the inset amount with the arrow keys
-                if (SplashKit.KeyDown(KeyCode.UpKey))
+                if (SplashKit.KeyDown(KeyCode.UpKey) && insetAmount < 95)
                 {
                     insetAmount += 1;
                 }

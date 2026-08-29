@@ -15,7 +15,7 @@ while (!QuitRequested())
     ClearScreen(Color.White);
 
     // Increase or decrease the inset amount with the arrow keys
-    if (KeyDown(KeyCode.UpKey))
+    if (KeyDown(KeyCode.UpKey) && insetAmount < 95)
     {
         insetAmount += 1;
     }
