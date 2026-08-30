@@ -19,14 +19,14 @@ while not quit_requested():
         inset_amount -= 1
 
     # Draw the outer rectangle
-    draw_rectangle(color_black(), outer_rect)
+    draw_rectangle_record(color_black(), outer_rect)
 
     # Get and draw the inset rectangle
     inner_rect = inset_rectangle(outer_rect, inset_amount)
-    fill_rectangle(color_red(), inner_rect)
+    fill_rectangle_record(color_red(), inner_rect)
 
     # Display the current inset amount, fixed to the screen
-    draw_text("Inset amount: " + to_string_from_int(int(inset_amount)), color_black(), 10, 10, option_to_screen())
+    draw_text_no_font_no_size_with_options("Inset amount: " + to_string_from_int(int(inset_amount)), color_black(), 10, 10, option_to_screen())
 
     refresh_screen_with_target_fps(60)
 
